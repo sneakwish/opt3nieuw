@@ -49,6 +49,7 @@ public class Boodschappenlijst {
         Fruit fruit1 = new Fruit(naam, prijsFruit);
         producten.add(fruit1);
         System.out.println(fruit1.getNaam() + " is toegevoegd aan de boodschappenlijst!");
+        //test
     }
 
     @Override

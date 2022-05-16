@@ -4,30 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb2c8646-c2c2-459e-a7f9-521152795263" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Boodschappenlijst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Desert.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Drank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Fastfood.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Fruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Korting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/opt3nieuw/HelloApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/app/View/HomeScreen.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/app/View/hello-view.fxml" afterDir="false" />
+    <list default="true" id="cb2c8646-c2c2-459e-a7f9-521152795263" name="Changes" comment="gang">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Boodschappenlijst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Boodschappenlijst.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +85,16 @@
       <workItem from="1652611751260" duration="13313000" />
       <workItem from="1652697866015" duration="14588000" />
       <workItem from="1652728224037" duration="2748000" />
+      <workItem from="1652741095493" duration="338000" />
     </task>
+    <task id="LOCAL-00001" summary="gang">
+      <created>1652741233747</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652741233747</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,5 +110,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="gang" />
+    <option name="LAST_COMMIT_MESSAGE" value="gang" />
   </component>
 </project>
