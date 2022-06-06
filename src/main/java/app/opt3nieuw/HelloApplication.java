@@ -1,6 +1,8 @@
 package app.opt3nieuw;
 
 import Model.Boodschappenlijst;
+import Model.Fruit;
+import Model.Product;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -13,9 +15,8 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("/app/View/HomeScreen.fxml"));
-
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        Scene scene = new Scene(fxmlLoader.load(), 450, 530);
+        stage.setTitle("Boodschappenlijst!");
         stage.setScene(scene);
         stage.show();
     }
@@ -32,11 +33,9 @@ public class HelloApplication extends Application {
 
 
     public static void main(String[] args) {
-        Boodschappenlijst lijst = new Boodschappenlijst("1 jan", true);
-        lijst.addFruit();
-        lijst.addFruit();
-        lijst.addFruit();
-        System.out.println(lijst.totaal());
+//        Boodschappenlijst lijst = new Boodschappenlijst("1 jan", true);
+//        Product bane = new Fruit("nss", 1.50);
+//        lijst.voegToe(bane);
         launch();
 
 

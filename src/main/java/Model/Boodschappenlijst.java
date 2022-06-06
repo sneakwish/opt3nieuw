@@ -9,54 +9,88 @@ public class Boodschappenlijst {
     private String datum;
     Boolean bonuskaart;
 
+
+    public ArrayList<Product> getProducten() {
+        return producten;
+    }
+
+    public void setProducten(ArrayList<Product> producten) {
+        this.producten = producten;
+    }
+
+    public String getDatum() {
+        return datum;
+    }
+
+    public void setDatum(String datum) {
+        this.datum = datum;
+    }
+
+    public Boolean getBonuskaart() {
+        return bonuskaart;
+    }
+
+    public void setBonuskaart(Boolean bonuskaart) {
+        this.bonuskaart = bonuskaart;
+    }
+
     public Boodschappenlijst(String datum, Boolean bonuskaart) {
         this.datum = datum;
         this.bonuskaart = bonuskaart;
     }
 
-    public int totaal()
+    public Double totaal()
     {
-        int totaal = 0;
+        Double totaal = 0.0;
         for (Product product : producten) {
             totaal = totaal +=product.prijs;
         }
         return totaal;
     }
 
-    public int korting(){
-        int korting = 0;
-        if(producten.size() >3){
+    public Double korting(){
+        Double korting = 0.0;
+        if(producten.size() >=3){
             korting = korting+3;
-            return korting;
         }
         if(bonuskaart){
             korting = korting+5;
-            return korting;
         }
-
-
-        return 0;
+        return korting;
     }
 
-    public void addFruit(){
-        System.out.println("Naam Fruit");
-        String naam = scanner.nextLine();
+    public Boolean heeftKorting(){
+        if(korting() == 0){
+            return false;
+        } else{
+            return true;
+        }
+    }
 
-        System.out.println("Voer in prijs:");
-        double prijsFruit = scanner.nextDouble();
-        scanner.nextLine();
+    public void addProduct(String naam, Double prijs){
+//        System.out.println("Naam Fruit");
+//        String naam = scanner.nextLine();
+//
+//        System.out.println("Voer in prijs:");
+//        double prijsFruit = scanner.nextDouble();
+//        scanner.nextLine();
 
-        Fruit fruit1 = new Fruit(naam, prijsFruit);
+        Fruit fruit1 = new Fruit(naam, prijs);
         producten.add(fruit1);
         System.out.println(fruit1.getNaam() + " is toegevoegd aan de boodschappenlijst!");
-        //test
+        System.out.println();
+    }
+
+    public void voegToe(Product product){
+        producten.add(product);
+        System.out.println(product.getNaam() + " is toegevoeg aan de boodschappenlijst!");
+
     }
 
     @Override
     public String toString() {
         return "Boodschappenlijst{" +
                 ", producten=" + producten +
-                ", datum='" + datum + '\'' +
                 '}';
     }
 

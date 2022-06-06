@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb2c8646-c2c2-459e-a7f9-521152795263" name="Changes" comment="gang">
+    <list default="true" id="cb2c8646-c2c2-459e-a7f9-521152795263" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Gezond.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Model/BoodschappenlijstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Boodschappenlijst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Boodschappenlijst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Desert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Desert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Drank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Drank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Fastfood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Fastfood.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Fruit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/opt3nieuw/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/opt3nieuw/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/app/View/HomeScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/app/View/HomeScreen.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -37,7 +50,12 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/wisha/IdeaProjects/opt3nieuw/src/main/resources/app/View&quot;
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/wisha/IdeaProjects/opt3nieuw/src/main/resources/app/View&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -48,18 +66,24 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\wisha\IdeaProjects\opt3nieuw\src\main\java" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Controller2" />
       <recent name="" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Model" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.HelloApplication">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.opt3nieuw.HelloApplication" />
       <module name="opt3nieuw" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Controller.*" />
+          <option name="PATTERN" value="app.opt3nieuw.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -67,9 +91,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BoodschappenlijstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="opt3nieuw" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Model" />
+      <option name="MAIN_CLASS_NAME" value="Model.BoodschappenlijstTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoodschappenlijstTest.condition1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="opt3nieuw" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Model" />
+      <option name="MAIN_CLASS_NAME" value="Model.BoodschappenlijstTest" />
+      <option name="METHOD_NAME" value="condition1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoodschappenlijstTest.decision" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="opt3nieuw" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Model" />
+      <option name="MAIN_CLASS_NAME" value="Model.BoodschappenlijstTest" />
+      <option name="METHOD_NAME" value="decision" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BoodschappenlijstTest.decision1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="opt3nieuw" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Model" />
+      <option name="MAIN_CLASS_NAME" value="Model.BoodschappenlijstTest" />
+      <option name="METHOD_NAME" value="decision1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="JUnit.BoodschappenlijstTest" />
+        <item itemvalue="JUnit.BoodschappenlijstTest.decision" />
+        <item itemvalue="JUnit.BoodschappenlijstTest.decision1" />
+        <item itemvalue="JUnit.BoodschappenlijstTest.condition1" />
       </list>
     </recent_temporary>
   </component>
@@ -85,7 +176,22 @@
       <workItem from="1652611751260" duration="13313000" />
       <workItem from="1652697866015" duration="14588000" />
       <workItem from="1652728224037" duration="2748000" />
-      <workItem from="1652741095493" duration="338000" />
+      <workItem from="1652741095493" duration="365000" />
+      <workItem from="1652788537584" duration="16310000" />
+      <workItem from="1653315164924" duration="1441000" />
+      <workItem from="1653323017128" duration="2219000" />
+      <workItem from="1653385380024" duration="3537000" />
+      <workItem from="1653652476763" duration="3484000" />
+      <workItem from="1653912768452" duration="8344000" />
+      <workItem from="1653994085193" duration="12922000" />
+      <workItem from="1654081673991" duration="1566000" />
+      <workItem from="1654091361639" duration="4015000" />
+      <workItem from="1654254354471" duration="10360000" />
+      <workItem from="1654427575772" duration="6025000" />
+      <workItem from="1654438794977" duration="2181000" />
+      <workItem from="1654445696137" duration="2458000" />
+      <workItem from="1654468614559" duration="602000" />
+      <workItem from="1654523346986" duration="786000" />
     </task>
     <task id="LOCAL-00001" summary="gang">
       <created>1652741233747</created>
@@ -94,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652741233747</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test">
+      <created>1652741440289</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652741440289</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +226,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gang" />
-    <option name="LAST_COMMIT_MESSAGE" value="gang" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>

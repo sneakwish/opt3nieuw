@@ -15,4 +15,5 @@ module app.opt3nieuw {
     exports app.opt3nieuw;
     exports Controller;
     opens Controller to javafx.fxml;
+    opens Model to javafx.base;
 }

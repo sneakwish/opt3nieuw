@@ -1,17 +1,21 @@
 package Model;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 public class Desert extends Product{
 
-    private static Integer getSuikergehalte = 0;
+    private Integer Suikergehalte = 0;
 
-    public Desert(String naam, double prijs){
+
+    public Desert(String naam, double prijs, Integer suikergehalte){
         super(naam, prijs);
-        getSuikergehalte+=10;
+        Suikergehalte = suikergehalte;
 
     }
 
     public Integer getSuikergehalte() {
-        return getSuikergehalte;
+        return Suikergehalte;
     }
 
 
@@ -24,10 +28,23 @@ public class Desert extends Product{
         return false;
     }
 
+    public ObservableList<Product> MaakProducten(){
+        ObservableList<Product> desert = FXCollections.observableArrayList();
+        Product appeltaart = new Desert("appeltaart", 1.00, 20);
+        Product slagroomijs = new Desert("slagroomijs", 2.50, 5);
+        Product cupcake = new Desert("cupcake", 3.00, 2);
+
+        desert.add(cupcake);
+        desert.add(slagroomijs);
+        desert.add(appeltaart);
+
+        return desert;
+    }
+
     @Override
     public String toString() {
         return typeProduct() + naam +
                 "\nPrijs:€" + prijs+
-                "\nsuikergehalte:" + getSuikergehalte;
+                "\nsuikergehalte:" + Suikergehalte;
     }
 }

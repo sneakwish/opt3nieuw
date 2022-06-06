@@ -1,8 +1,10 @@
 package Model;
 
+import javafx.collections.ObservableList;
+
 import java.util.Scanner;
 
-abstract public class Product {
+public abstract class Product {
     Scanner scanner = new Scanner(System.in);
     public String naam;
     public double prijs;
@@ -13,10 +15,15 @@ abstract public class Product {
     }
 
     public abstract Boolean gezond();
+//    public Boolean gezond(){
+//        return true;
+//    }
 
     public String getNaam() {
         return naam;
     }
+
+    public abstract ObservableList<Product> MaakProducten();
 
     public String typeProduct() {
         return "Product:";
