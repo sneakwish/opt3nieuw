@@ -4,7 +4,7 @@ import javafx.collections.ObservableList;
 
 import java.util.Scanner;
 
-public abstract class Product {
+public abstract class Product implements Bonuskaart{
     Scanner scanner = new Scanner(System.in);
     public String naam;
     public double prijs;
@@ -14,7 +14,7 @@ public abstract class Product {
         this.prijs = prijs;
     }
 
-    public abstract Boolean gezond();
+//    public abstract Boolean gezond();
 //    public Boolean gezond(){
 //        return true;
 //    }

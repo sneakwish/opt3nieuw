@@ -3,12 +3,11 @@ package Model;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Boodschappenlijst {
-    Scanner scanner = new Scanner(System.in);
+public class Boodschappenlijst implements Korting2, Bonuskaart {
+    private Scanner scanner = new Scanner(System.in);
     ArrayList<Product> producten = new ArrayList<Product>();
     private String datum;
-    Boolean bonuskaart;
-
+    private Boolean bonuskaart;
 
     public ArrayList<Product> getProducten() {
         return producten;
@@ -75,7 +74,7 @@ public class Boodschappenlijst {
 //        double prijsFruit = scanner.nextDouble();
 //        scanner.nextLine();
 
-        Fruit fruit1 = new Fruit(naam, prijs);
+        Fruit fruit1 = new Fruit(naam, prijs, 6);
         producten.add(fruit1);
         System.out.println(fruit1.getNaam() + " is toegevoegd aan de boodschappenlijst!");
         System.out.println();

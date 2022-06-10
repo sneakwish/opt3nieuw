@@ -6,42 +6,37 @@ import javafx.collections.ObservableList;
 import java.util.ArrayList;
 
 public class Drank extends Product{
-    private Integer AlcoholPercentage = 0;
+    private Double liter;
 
-    public Drank(String naam, double prijs, Integer alcoholPercentage){
+    public Drank(String naam, double prijs, Double liter){
         super(naam, prijs);
-        this.AlcoholPercentage = alcoholPercentage;
+        this.liter = liter;
     }
 
-    public Integer getAlcoholPercentage() {
-        return AlcoholPercentage;
-    }
-
-    public void setAlcoholPercentage(Integer alcoholPercentage) {
-        AlcoholPercentage = alcoholPercentage;
-    }
+//    public Integer getAlcoholPercentage() {
+//        return AlcoholPercentage;
+//    }
+//
+//    public void setAlcoholPercentage(Integer alcoholPercentage) {
+//        AlcoholPercentage = alcoholPercentage;
+//    }
 
     public String typeProduct() {
         return "Drank:";
     }
 
     public Boolean gezond(){
-        return false;
+        return true;
     }
 
     public ObservableList<Product> MaakProducten(){
         ObservableList<Product> list = FXCollections.observableArrayList();
-        Product Cola = new Drank("Cola", 1.00, 0);
-        Product Fanta = new Drank("Fanta", 1.49, 0);
-        Product Heineken = new Drank("Heineken", 2.50, 5);
-        Product Soju = new Drank("Soju", 9.00, 21);
-        Product Bacardi = new Drank("Bacardi", 15.00, 35);
+        Product Cola = new Drank("Cola", 1.00,  0.5);
+        Product Fanta = new Drank("Fanta", 1.49, 0.5);
+
 
         list.add(Cola);
         list.add(Fanta);
-        list.add(Heineken);
-        list.add(Soju);
-        list.add(Bacardi);
         return list;
 
     }
@@ -49,8 +44,7 @@ public class Drank extends Product{
     @Override
     public String toString() {
         return typeProduct() + naam +
-                "\nPrijs:€" + prijs+
-                "\nAlcoholPercentage:" + AlcoholPercentage;
+                "\nPrijs:€" + prijs;
     }
 
 }

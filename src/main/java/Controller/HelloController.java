@@ -109,7 +109,7 @@ public class HelloController {
 
     @FXML
     void getFruits(ActionEvent event) {
-        Fruit temp = new Fruit("temp", 1.00);
+        Fruit temp = new Fruit("temp", 1.00, 6);
         tableview.setItems(temp.MaakProducten());
     }
 
@@ -121,7 +121,7 @@ public class HelloController {
 
     @FXML
     void getDranken(ActionEvent event) {
-        Drank temp = new Drank("temp", 1.00, 52);
+        Drank temp = new Drank("temp", 1.00, 5.0);
         tableview.setItems(temp.MaakProducten());
     }
 
