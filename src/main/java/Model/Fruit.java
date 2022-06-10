@@ -7,10 +7,18 @@ public class Fruit extends Product{
     private final String vitamine = "C";
     private int mineralen;
 
-    public Fruit(String naam, double prijs, int mineralen) {
+    public Fruit(String naam, double prijs, Integer mineralen) {
         super(naam, prijs);
         this.mineralen = mineralen;
 
+    }
+
+    public double berekenPrijsStap2(double stap1){
+        if(mineralen> 2){
+            double fruitKorting = stap1 * 0.03;
+            return stap1 - fruitKorting;
+        }
+        return stap1;
     }
 
     public String getVitamine() {
@@ -31,13 +39,15 @@ public class Fruit extends Product{
 
     public ObservableList<Product> MaakProducten(){
         ObservableList<Product> fruits = FXCollections.observableArrayList();
-        Product banaan = new Fruit("Banaan", 1.00, 5);
+        Product banaan = new Fruit("Banaan", 1.00, 1);
         Product appel = new Fruit("appel", 2.50, 4);
         Product peer = new Fruit("peer", 3.00, 2);
+        Product aardbei = new Fruit("aardbei", 10.00, 20);
 
         fruits.add(banaan);
         fruits.add(appel);
         fruits.add(peer);
+        fruits.add(aardbei);
 
         return fruits;
     }

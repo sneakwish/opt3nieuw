@@ -21,17 +21,6 @@ public class HelloApplication extends Application {
         stage.show();
     }
 
-    void goContact(ActionEvent event) {
-        System.out.println("lollolol");
-
-    }
-
-    void goBericht(ActionEvent event) {
-        System.out.println("lollolol");
-
-    }
-
-
     public static void main(String[] args) {
 //        Boodschappenlijst lijst = new Boodschappenlijst("1 jan", true);
 //        Product bane = new Fruit("nss", 1.50);

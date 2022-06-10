@@ -5,17 +5,24 @@ import javafx.collections.ObservableList;
 
 public class Desert extends Product{
 
-    private Integer Suikergehalte = 0;
+    private int suikergehalte;
 
-
-    public Desert(String naam, double prijs, Integer suikergehalte){
+    public Desert(String naam, double prijs, int suikergehalte){
         super(naam, prijs);
-        Suikergehalte = suikergehalte;
+        this.suikergehalte = suikergehalte;
 
     }
 
-    public Integer getSuikergehalte() {
-        return Suikergehalte;
+    public double berekenPrijsStap2(double stap2){
+        if(suikergehalte> 2){
+            double suikerBTW =  stap2 * 0.03;
+            return stap2 + suikerBTW;
+        }
+        return stap2;
+    }
+
+    public int getSuikergehalte() {
+        return suikergehalte;
     }
 
 
@@ -45,6 +52,6 @@ public class Desert extends Product{
     public String toString() {
         return typeProduct() + naam +
                 "\nPrijs:€" + prijs+
-                "\nsuikergehalte:" + Suikergehalte;
+                "\nsuikergehalte:" + suikergehalte;
     }
 }

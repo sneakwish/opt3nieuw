@@ -4,14 +4,22 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 public class Fastfood extends Product{
-    private Integer vet = 0;
+    private int vet = 0;
 
     public Fastfood(String naam, double prijs, int vet){
         super(naam, prijs);
         this.vet=vet;
     }
 
-    public Integer getVet() {
+    public double berekenPrijsStap2(double stap2){
+        if(vet> 2){
+            double vetBTW =  stap2 * 0.03;
+            return stap2 + vetBTW;
+        }
+        return stap2;
+    }
+
+    public int getVet() {
         return vet;
     }
 

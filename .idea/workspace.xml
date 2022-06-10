@@ -4,18 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cb2c8646-c2c2-459e-a7f9-521152795263" name="Changes" comment="ding">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/AlcoholDrank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Bonuskaart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Korting2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/abstractding.java" afterDir="false" />
+    <list default="true" id="cb2c8646-c2c2-459e-a7f9-521152795263" name="Changes" comment="Template Method Pattern">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Boodschappenlijst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Boodschappenlijst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Desert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Desert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Drank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Drank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Fastfood.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Fastfood.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Fruit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Gezond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Gezond.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/abstractding.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/opt3nieuw/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/opt3nieuw/HelloApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +193,8 @@
       <workItem from="1654551198266" duration="1827000" />
       <workItem from="1654769428265" duration="7570000" />
       <workItem from="1654812387603" duration="5731000" />
-      <workItem from="1654856780425" duration="1693000" />
+      <workItem from="1654856780425" duration="4307000" />
+      <workItem from="1654862209694" duration="4975000" />
     </task>
     <task id="LOCAL-00001" summary="gang">
       <created>1652741233747</created>
@@ -218,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654524158337</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="m">
+      <created>1654859505103</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1654859505103</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,6 +245,30 @@
     <MESSAGE value="gang" />
     <MESSAGE value="test" />
     <MESSAGE value="ding" />
-    <option name="LAST_COMMIT_MESSAGE" value="ding" />
+    <MESSAGE value="m" />
+    <MESSAGE value="Template Method Pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Template Method Pattern" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Model/Desert.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Model/Desert.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/main/java/Model/Desert.java</url>
+          <line>7</line>
+          <properties field="suikergehalte" class="Model.Desert" />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

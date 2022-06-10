@@ -136,12 +136,4 @@ public class HelloController {
         kolomNaam.setCellValueFactory(new PropertyValueFactory<Product, String>("naam"));
         kolomPrijs.setCellValueFactory(new PropertyValueFactory<Product, Double> ("prijs"));
     }
-
-    void goContact(ActionEvent event) {
-        System.out.println("lollolol");
-    }
-
-    void goBericht(ActionEvent event) {
-        System.out.println("lollolol");
-    }
 }

@@ -6,20 +6,14 @@ import javafx.collections.ObservableList;
 import java.util.ArrayList;
 
 public class Drank extends Product{
-    private Double liter;
+    private double liter;
 
-    public Drank(String naam, double prijs, Double liter){
+    public Drank(String naam, double prijs, double liter){
         super(naam, prijs);
         this.liter = liter;
     }
 
-//    public Integer getAlcoholPercentage() {
-//        return AlcoholPercentage;
-//    }
-//
-//    public void setAlcoholPercentage(Integer alcoholPercentage) {
-//        AlcoholPercentage = alcoholPercentage;
-//    }
+
 
     public String typeProduct() {
         return "Drank:";
@@ -27,6 +21,15 @@ public class Drank extends Product{
 
     public Boolean gezond(){
         return true;
+    }
+
+
+    public double berekenPrijsStap2(double stap2){
+        if(liter> 1){
+            double DrankKorting = stap2 * 0.05;
+            return stap2 - DrankKorting;
+        }
+        return stap2;
     }
 
     public ObservableList<Product> MaakProducten(){
