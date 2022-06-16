@@ -93,7 +93,8 @@ public class HelloController {
         String yo = "";
         Product prod = tableview.getSelectionModel().getSelectedItem();
         for(Product product : lijst.getProducten()){
-            yo+=product;
+            yo+="Naam: " + product.getNaam() + "\n";
+            yo+="Prijs: " + product.getPrijs() + "\n";
         }
         alert.setContentText(yo);
         alert.showAndWait();
@@ -104,7 +105,6 @@ public class HelloController {
         Product yo = tableview.getSelectionModel().getSelectedItem();
 
         lijst.voegToe(yo);
-        System.out.println(lijst.getProducten());
     }
 
     @FXML
