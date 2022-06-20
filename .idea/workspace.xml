@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cb2c8646-c2c2-459e-a7f9-521152795263" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Boodschappenlijst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Boodschappenlijst.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Model/BoodschappenlijstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Model/BoodschappenlijstTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +59,7 @@
       <recent name="Model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BoodschappenlijstTest">
+  <component name="RunManager" selected="JUnit.BoodschappenlijstTest.Equivalentieklassen">
     <configuration name="BoodschappenlijstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="opt3nieuw" />
       <extension name="coverage">
@@ -76,6 +75,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BoodschappenlijstTest.Equivalentieklassen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="opt3nieuw" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Model" />
+      <option name="MAIN_CLASS_NAME" value="Model.BoodschappenlijstTest" />
+      <option name="METHOD_NAME" value="Equivalentieklassen" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BoodschappenlijstTest.conditionDecision" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="opt3nieuw" />
       <extension name="coverage">
@@ -87,22 +102,6 @@
       <option name="PACKAGE_NAME" value="Model" />
       <option name="MAIN_CLASS_NAME" value="Model.BoodschappenlijstTest" />
       <option name="METHOD_NAME" value="conditionDecision" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BoodschappenlijstTest.decision" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="opt3nieuw" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Model" />
-      <option name="MAIN_CLASS_NAME" value="Model.BoodschappenlijstTest" />
-      <option name="METHOD_NAME" value="decision" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BoodschappenlijstTest.Equivalentieklassen" />
         <item itemvalue="JUnit.BoodschappenlijstTest" />
         <item itemvalue="JUnit.BoodschappenlijstTest.modified" />
         <item itemvalue="JUnit.BoodschappenlijstTest.conditionDecision" />
         <item itemvalue="JUnit.BoodschappenlijstTest.multipleCondition" />
-        <item itemvalue="JUnit.BoodschappenlijstTest.decision" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +189,7 @@
       <workItem from="1655111472589" duration="95000" />
       <workItem from="1655392276070" duration="141000" />
       <workItem from="1655650829898" duration="595000" />
-      <workItem from="1655729166670" duration="3499000" />
+      <workItem from="1655729166670" duration="4253000" />
     </task>
     <task id="LOCAL-00001" summary="gang">
       <created>1652741233747</created>
@@ -234,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655392407883</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="jUnit coverages fix">
+      <created>1655734640023</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1655734640023</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +265,8 @@
     <MESSAGE value="Template Method Pattern" />
     <MESSAGE value="BerekenPrijs template aangepast" />
     <MESSAGE value="print product" />
-    <option name="LAST_COMMIT_MESSAGE" value="print product" />
+    <MESSAGE value="jUnit coverages fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="jUnit coverages fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
