@@ -49,11 +49,13 @@ public class Boodschappenlijst implements Korting2, Bonuskaart {
 
     public Double korting(){
         Double korting = 0.0;
-        if(producten.size() >=3){
-            korting = korting+3;
-        }
-        if(bonuskaart){
+        if(producten.size() >=5 && producten.size()<10)
             korting = korting+5;
+
+        else if(producten.size() >=10)
+            korting = korting+10;
+        if(bonuskaart){
+            korting = korting+15;
         }
         return korting;
     }
