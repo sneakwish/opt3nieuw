@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb2c8646-c2c2-459e-a7f9-521152795263" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/AbstractFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Model/BoodschappenlijstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Model/BoodschappenlijstTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,20 @@
       <recent name="Model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BoodschappenlijstTest.Equivalentieklassen">
+  <component name="RunManager" selected="Application.HelloApplication">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.opt3nieuw.HelloApplication" />
+      <module name="opt3nieuw" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.opt3nieuw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BoodschappenlijstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="opt3nieuw" />
       <extension name="coverage">
@@ -123,29 +136,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BoodschappenlijstTest.multipleCondition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="opt3nieuw" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Model" />
-      <option name="MAIN_CLASS_NAME" value="Model.BoodschappenlijstTest" />
-      <option name="METHOD_NAME" value="multipleCondition" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HelloApplication" />
         <item itemvalue="JUnit.BoodschappenlijstTest.Equivalentieklassen" />
         <item itemvalue="JUnit.BoodschappenlijstTest" />
         <item itemvalue="JUnit.BoodschappenlijstTest.modified" />
         <item itemvalue="JUnit.BoodschappenlijstTest.conditionDecision" />
-        <item itemvalue="JUnit.BoodschappenlijstTest.multipleCondition" />
       </list>
     </recent_temporary>
   </component>
@@ -189,7 +186,8 @@
       <workItem from="1655111472589" duration="95000" />
       <workItem from="1655392276070" duration="141000" />
       <workItem from="1655650829898" duration="595000" />
-      <workItem from="1655729166670" duration="4253000" />
+      <workItem from="1655729166670" duration="7310000" />
+      <workItem from="1655802043537" duration="753000" />
     </task>
     <task id="LOCAL-00001" summary="gang">
       <created>1652741233747</created>
@@ -240,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655734640023</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="equevelentieklassen tests">
+      <created>1655735319151</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1655735319151</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,7 +271,8 @@
     <MESSAGE value="BerekenPrijs template aangepast" />
     <MESSAGE value="print product" />
     <MESSAGE value="jUnit coverages fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="jUnit coverages fix" />
+    <MESSAGE value="equevelentieklassen tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="equevelentieklassen tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
