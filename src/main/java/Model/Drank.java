@@ -36,10 +36,12 @@ public class Drank extends Product{
         ObservableList<Product> list = FXCollections.observableArrayList();
         Product Cola = new Drank("Cola", 1.00,  0.5);
         Product Fanta = new Drank("Fanta", 1.49, 0.5);
+        Product Appelsap = new Drank("Appelsap", 0.49, 0.2);
 
 
         list.add(Cola);
         list.add(Fanta);
+        list.add(Appelsap);
         return list;
 
     }

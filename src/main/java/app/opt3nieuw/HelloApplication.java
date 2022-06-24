@@ -1,10 +1,7 @@
 package app.opt3nieuw;
 
-import Model.Boodschappenlijst;
-import Model.Fruit;
-import Model.Product;
+import Model.Factory1;
 import javafx.application.Application;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -25,6 +22,7 @@ public class HelloApplication extends Application {
 //        Boodschappenlijst lijst = new Boodschappenlijst("1 jan", true);
 //        Product bane = new Fruit("nss", 1.50);
 //        lijst.voegToe(bane);
+
         launch();
 
 

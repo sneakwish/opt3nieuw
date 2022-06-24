@@ -20,6 +20,8 @@ import javafx.scene.text.Text;
 
 public class HelloController {
     Boodschappenlijst lijst = new Boodschappenlijst("1 jan", true);
+    Seeder seeder  = new Seeder();
+
 
     @FXML
     private ResourceBundle resources;
@@ -109,26 +111,22 @@ public class HelloController {
 
     @FXML
     void getFruits(ActionEvent event) {
-        Fruit temp = new Fruit("temp", 1.00, 6);
-        tableview.setItems(temp.MaakProducten());
+        tableview.setItems(seeder.fruitLijst());
     }
 
     @FXML
     void getDesserts(ActionEvent event) {
-        Desert temp = new Desert("temp", 1.00, 52);
-        tableview.setItems(temp.MaakProducten());
+        tableview.setItems(seeder.desertLijst());
     }
 
     @FXML
     void getDranken(ActionEvent event) {
-        Drank temp = new Drank("temp", 1.00, 5.0);
-        tableview.setItems(temp.MaakProducten());
+        tableview.setItems(seeder.drankLijst());
     }
 
     @FXML
     void getFastfoods(ActionEvent event) {
-        Fastfood temp = new Fastfood("temp", 1.00, 52);
-        tableview.setItems(temp.MaakProducten());
+        tableview.setItems(seeder.fastfoodLijst());
     }
 
     @FXML
