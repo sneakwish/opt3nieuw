@@ -1,9 +1,10 @@
 package Model;
 
+import Controller.HelloController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-public class Seeder {
+public class Seeder extends HelloController {
     Factory1 fact1 = new Factory1();
     Factory2 fact2 = new Factory2();
     Factory3 fact3 = new Factory3();

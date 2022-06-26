@@ -5,7 +5,7 @@ import javafx.collections.ObservableList;
 
 import java.util.ArrayList;
 
-public class Drank extends Product{
+public class Drank extends Gezond {
     private double liter;
 
     public Drank(String naam, double prijs, double liter){

@@ -3,11 +3,39 @@ package Model;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Boodschappenlijst implements Bonuskaart {
+public class Boodschappenlijst extends Korting implements Bonuskaart {
     private Scanner scanner = new Scanner(System.in);
     ArrayList<Product> producten = new ArrayList<Product>();
     private String datum;
     private Boolean bonuskaart;
+
+    public int getLeeftijd() {
+        return leeftijd;
+    }
+
+    public void setLeeftijd(int leeftijd) {
+        this.leeftijd = leeftijd;
+    }
+
+    public boolean isPinnen() {
+        return pinnen;
+    }
+
+    public void setPinnen(boolean pinnen) {
+        this.pinnen = pinnen;
+    }
+
+    public boolean isId() {
+        return id;
+    }
+
+    public void setId(boolean id) {
+        this.id = id;
+    }
+
+    private int leeftijd;
+    private boolean pinnen;
+    private boolean id;
 
     public ArrayList<Product> getProducten() {
         return producten;
@@ -58,6 +86,21 @@ public class Boodschappenlijst implements Bonuskaart {
             korting = korting+15;
         }
         return korting;
+    }
+
+    public Boolean checkAlcohol(AlcoholDrank drank){
+        if(leeftijd<18){
+            return false;
+        }
+        if(leeftijd>=18 && leeftijd <21 && pinnen && id && drank.getAlcoholPercentage() <15){
+            return true;
+        }
+        if(leeftijd>21 && pinnen &&id){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     public Boolean heeftKorting(){

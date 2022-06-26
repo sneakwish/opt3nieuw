@@ -3,7 +3,7 @@ package Model;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-public class Fruit extends Product{
+public class Fruit extends Gezond {
     private final String vitamine = "C";
     private int mineralen;
 

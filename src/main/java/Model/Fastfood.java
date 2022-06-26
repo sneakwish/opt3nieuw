@@ -3,7 +3,7 @@ package Model;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-public class Fastfood extends Product{
+public class Fastfood extends Gezond {
     private int vet = 0;
 
     public Fastfood(String naam, double prijs, int vet){

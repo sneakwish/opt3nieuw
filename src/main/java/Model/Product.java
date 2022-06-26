@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import static eu.hansolo.tilesfx.tools.Helper.round;
 
-public abstract class Product{
+public abstract class Product extends Boodschappenlijst {
     Scanner scanner = new Scanner(System.in);
     public String naam;
     public double prijs;

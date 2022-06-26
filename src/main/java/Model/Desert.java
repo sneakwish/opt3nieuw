@@ -3,7 +3,7 @@ package Model;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
-public class Desert extends Product{
+public class Desert extends Gezond {
 
     private int suikergehalte;
 

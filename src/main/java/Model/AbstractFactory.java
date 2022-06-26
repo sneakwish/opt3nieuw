@@ -1,6 +1,6 @@
 package Model;
 
-public abstract class AbstractFactory {
+public abstract class AbstractFactory extends Seeder {
 //    public static final FruitFactory FRUIT_FACTORY = new FruitFactory();
 //    public static final DrankFactory DRANK_FACTORY;
 //    public static final DesertFactory DESERT_FACTORY;
