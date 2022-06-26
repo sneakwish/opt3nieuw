@@ -19,8 +19,6 @@ public abstract class AbstractFactory {
             return null;
         }
     }
-
-
     public abstract Product createFruit();
     public abstract Product createDrank();
     public abstract Product createDesert();

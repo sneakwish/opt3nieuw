@@ -40,8 +40,9 @@
                   </TableView>
                   <Button fx:id="OverzichtKnop" layoutX="341.0" layoutY="390.0" mnemonicParsing="false" onAction="#ToonOverzicht" text="Overzicht" />
                   <Button fx:id="VoegToeKnop" layoutX="22.0" layoutY="398.0" mnemonicParsing="false" onAction="#VoegToe" prefHeight="25.0" prefWidth="116.0" text="VoegToe" />
-                  <Text fx:id="huidigeKosten" layoutX="159.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Totale opbrengst mei: € 50,-" wrappingWidth="167.2578125" />
+                  <Text fx:id="huidigeKosten" layoutX="249.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="€ 0,-" wrappingWidth="81.2578125" />
                   <Button fx:id="GegevensKnop" layoutX="21.0" layoutY="359.0" mnemonicParsing="false" onAction="#GegevensProduct" prefHeight="25.0" prefWidth="116.0" text="Product gegevens" />
+                  <Text fx:id="huidigeKosten1" layoutX="162.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Huidige kosten: " wrappingWidth="87.2578125" />
                </children>
             </AnchorPane>
         </items>

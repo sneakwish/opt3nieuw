@@ -8,17 +8,36 @@ import javafx.event.ActionEvent;
 
 import javafx.fxml.FXML;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+
+import static eu.hansolo.tilesfx.tools.Helper.round;
 
 
 public class HelloController {
+
+    public Boodschappenlijst getLijst() {
+        return lijst;
+    }
+
+    public void setLijst(Boodschappenlijst lijst) {
+        this.lijst = lijst;
+    }
+
     Boodschappenlijst lijst = new Boodschappenlijst("1 jan", true);
     Seeder seeder  = new Seeder();
 
@@ -87,19 +106,29 @@ public class HelloController {
     }
 
     @FXML
-    void ToonOverzicht(ActionEvent event) {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Overzicht");
-        alert.setHeaderText("Boodschappenlijst:");
-        ArrayList<Product> list = new ArrayList<Product>();
-        String yo = "";
-        Product prod = tableview.getSelectionModel().getSelectedItem();
+    void ToonOverzicht(ActionEvent event) throws IOException {
+        ObservableList<Product> overzicht = FXCollections.observableArrayList();
         for(Product product : lijst.getProducten()){
-            yo+="Naam: " + product.getNaam() + "\n";
-            yo+="Prijs: " + product.getPrijs() + "\n";
+            overzicht.add(product);
         }
-        alert.setContentText(yo);
-        alert.showAndWait();
+        Pane root = FXMLLoader.load(getClass().getResource("/app/View/Overzicht.fxml"));
+
+        Stage dialogStage = new Stage();
+        dialogStage.initModality(Modality.WINDOW_MODAL);
+
+        OverzichtController overzichtController = new OverzichtController();
+        overzichtController.setOverzicht(overzicht);
+//        System.out.println(overzicht);
+        System.out.println(lijst.korting());
+
+
+//        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Overzicht.fxml"));
+//        OverzichtController controller = fxmlLoader.<OverzichtController>getController();
+//        controller.setOverzicht(overzicht);
+
+
+        dialogStage.setScene(new Scene(root, 400, 500));
+        dialogStage.showAndWait();
     }
 
     @FXML
@@ -107,6 +136,7 @@ public class HelloController {
         Product yo = tableview.getSelectionModel().getSelectedItem();
 
         lijst.voegToe(yo);
+        updateHuidigekosten(round(lijst.totaal(), 2));
     }
 
     @FXML
@@ -128,6 +158,11 @@ public class HelloController {
     void getFastfoods(ActionEvent event) {
         tableview.setItems(seeder.fastfoodLijst());
     }
+
+    void updateHuidigekosten(Double totaal){
+        huidigeKosten.setText(""+totaal);
+    }
+
 
     @FXML
     void initialize() {

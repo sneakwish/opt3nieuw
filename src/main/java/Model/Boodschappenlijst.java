@@ -3,7 +3,7 @@ package Model;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Boodschappenlijst implements Korting2, Bonuskaart {
+public class Boodschappenlijst implements Bonuskaart {
     private Scanner scanner = new Scanner(System.in);
     ArrayList<Product> producten = new ArrayList<Product>();
     private String datum;

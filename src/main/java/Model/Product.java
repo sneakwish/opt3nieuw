@@ -4,6 +4,8 @@ import javafx.collections.ObservableList;
 
 import java.util.Scanner;
 
+import static eu.hansolo.tilesfx.tools.Helper.round;
+
 public abstract class Product{
     Scanner scanner = new Scanner(System.in);
     public String naam;
@@ -13,9 +15,9 @@ public abstract class Product{
 
     public Product(String naam, double prijs) {
         this.naam = naam;
-        this.prijs =    berekenPrijsStap3(
-                        berekenPrijsStap2(
-                        berekenPrijsStap1(prijs)));
+        this.prijs = round(berekenPrijsStap3(
+                           berekenPrijsStap2(
+                           berekenPrijsStap1(prijs))), 2);
     }
 
 //    public abstract Boolean gezond();
